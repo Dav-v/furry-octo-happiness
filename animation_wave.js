@@ -9,13 +9,13 @@
     ],
     keyFrames: [
       //led1 normal
-      [{value: 0}, null, null, null, null, null,
-      {value: 255},null, null, null, null, null,
-    {value: 0}],
+      [{value: 0}, null, null, null, null, null, //cuepoint 0
+      {value: 255},null, null, null, null, null, //cuepoint in the middle
+    {value: 0}], //cuepoint 1
     //led2 shifted by delay
-      [tweenCalc(0.5+  delay/duration ,delay/duration, 1, easing,255, 0 ), {value: 0}, null, null, null, null,
-      null, {value: 255}, null, null, null, null,
-     {value: tweenCalc(0.5+  delay/duration ,delay/duration, 1, easing,255, 0 )}],
+      [tweenCalc(0.5+  delay/duration ,delay/duration, 1, easing,255, 0 ), {value: 0}, null, null, null, null, //cuepoint 0
+      null, {value: 255}, null, null, null, null, //cuepoint in the middle
+     {value: tweenCalc(0.5+  delay/duration ,delay/duration, 1, easing,255, 0 )}],  //cuepoint 1
 
 //led3 shifted by delay*2
       [tweenCalc(0.5+  (delay*2)/duration ,(delay*2)/duration, 1, easing,255, 0 ), null, {value: 0},null, null, null,
