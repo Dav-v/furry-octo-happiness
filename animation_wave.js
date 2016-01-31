@@ -13,24 +13,24 @@
       {value: 255},null, null, null, null, null, //cuepoint in the middle
     {value: 0}], //cuepoint 1
     //led2 shifted by delay
-      [tweenCalc(0.5+  delay/duration ,delay/duration, 1, easing,255, 0 ), {value: 0}, null, null, null, null, //cuepoint 0
+      [{value:tweenCalc(0.5+  delay/duration ,delay/duration, 1, easing,255, 0 )}, {value: 0}, null, null, null, null, //cuepoint 0
       null, {value: 255}, null, null, null, null, //cuepoint in the middle
      {value: tweenCalc(0.5+  delay/duration ,delay/duration, 1, easing,255, 0 )}],  //cuepoint 1
 
 //led3 shifted by delay*2
-      [tweenCalc(0.5+  (delay*2)/duration ,(delay*2)/duration, 1, easing,255, 0 ), null, {value: 0},null, null, null,
+      [{value:tweenCalc(0.5+  (delay*2)/duration ,(delay*2)/duration, 1, easing,255, 0 )}, null, {value: 0},null, null, null,
       null, null, {value: 255}, null, null, null,
     {value:tweenCalc(0.5+  (delay*2)/duration ,(delay*2)/duration, 1, easing,255, 0 )}],
 //led4 shifted by delay*3
-      [tweenCalc(0.5+  (delay*3)/duration ,(delay*3)/duration, 1, easing,255, 0 ), null, null, {value: 0},null, null,
+      [{value:tweenCalc(0.5+  (delay*3)/duration ,(delay*3)/duration, 1, easing,255, 0 )}, null, null, {value: 0},null, null,
       null, null, null, {value: 255},null, null,
     {value: tweenCalc(0.5+  (delay*3)/duration ,(delay*3)/duration, 1, easing,255, 0 )}],
 //led5 shifted by delay*4
-      [tweenCalc(0.5+  (delay*4)/duration ,(delay*4)/duration, 1, easing,255, 0 ), null, null, null, {value: 0}, null,
+      [{value:tweenCalc(0.5+  (delay*4)/duration ,(delay*4)/duration, 1, easing,255, 0 )}, null, null, null, {value: 0}, null,
       null, null, null, null, {value: 255}, null,
     {value:tweenCalc(0.5+  (delay*4)/duration ,(delay*4)/duration, 1, easing,255, 0 )}],
 //led6 shifted by delay*5
-      [tweenCalc(0.5+  (delay*5)/duration ,(delay*5)/duration, 1, easing,255, 0 ), null, null, null, null, {value: 0},
+      [{value:tweenCalc(0.5+  (delay*5)/duration ,(delay*5)/duration, 1, easing,255, 0 )}, null, null, null, null, {value: 0},
       null, null, null, null, null , {value: 255},
     {value:tweenCalc(0.5+  (delay*5)/duration ,(delay*5)/duration, 1, easing,255, 0 )}],
     ],
